@@ -4,7 +4,7 @@
 
 ## Project Overview
 This project performs **Exploratory Data Analysis (EDA)** on New York Airbnb data to understand pricing patterns, availability trends, and host behavior. The analysis focuses on extracting meaningful insights from raw data.
-![AirBnb](Images\Renting-out-on-Air-BnB-scaled.jpg)
+![AirBnb](Images/Renting-out-on-Air-BnB-scaled.jpg)
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ To avoid removing legitimate high-priced listings while still filtering unrealis
 ## 2. Exploratory Data Analysis (EDA)
 
 ### Price Distribution
-![Price Distribution](Images\Price-Distribution.png)
+![Price Distribution](Images/Price-Distribution.png)
 
 - Most listings are priced between $50–$300
 - The distribution is highly right-skewed, indicating presence of extreme high-price listings
@@ -52,7 +52,7 @@ To avoid removing legitimate high-priced listings while still filtering unrealis
 ---
 
 ### Price by Neighborhood and Room Type
-![Price by Neighborhood](Images\Price-by-Neighborhood.png)
+![Price by Neighborhood](Images/Price-by-Neighborhood.png)
 
 - Manhattan has the highest average prices across most room types
 - Entire homes/apartments are consistently the most expensive option in all neighbourhoods
@@ -62,7 +62,7 @@ To avoid removing legitimate high-priced listings while still filtering unrealis
 ---
 
 ### Price vs Number of Reviews
-![Price vs Reviews](Images\Price-vs-Reviews.png)
+![Price vs Reviews](Images/Price-vs-Reviews.png)
 
 - Lower-priced listings tend to receive more reviews
 - Indicates a negative relationship between price and demand
@@ -70,7 +70,7 @@ To avoid removing legitimate high-priced listings while still filtering unrealis
 ---
 
 ### Correlation Heatmap
-![Correlation Heatmap](Images\Correlation-Heatmap.png)
+![Correlation Heatmap](Images/Correlation-Heatmap.png)
 
 - Price shows moderate correlation with number of reviews and availability
 - Most variables have weak correlations, indicating independent effects
