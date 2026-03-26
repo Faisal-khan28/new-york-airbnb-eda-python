@@ -4,7 +4,7 @@
 
 ## Project Overview
 This project performs **Exploratory Data Analysis (EDA)** on New York Airbnb data to understand pricing patterns, availability trends, and host behavior. The analysis focuses on extracting meaningful insights from raw data.
-
+![AirBnb](Images\Renting-out-on-Air-BnB-scaled.jpg)
 ---
 
 ## Objective
@@ -36,7 +36,44 @@ The dataset contains **20,770 entries and 22 features**, including:
 - **Handled missing data**: `price`, `neighborhood`, and `beds` columns had null values.  
 -  **Handled duplicate values**: Dropped duplicate values from data.
 - **Fix data types**: Converted `last_review` to a **datetime** object.
-- **Remove outliers**: Listings with prices above $1,500 were removed to reduce the impact of extreme outliers while preserving realistic high-value listings.
+- **Remove outliers**: The IQR method identified an upper bound of approximately 377 for the price column. However, the distribution of Airbnb prices is highly right-skewed, with extreme values (maximum price = 100,000) inflating the variance.  
+To avoid removing legitimate high-priced listings while still filtering unrealistic values, listings with prices greater than 1500 were treated as outliers and removed from the dataset.
+
+---
+
+## 2. Exploratory Data Analysis (EDA)
+
+### Price Distribution
+![Price Distribution](Images\Price-Distribution.png)
+
+- Most listings are priced between $50–$300
+- The distribution is highly right-skewed, indicating presence of extreme high-price listings
+
+---
+
+### Price by Neighborhood and Room Type
+![Price by Neighborhood](Images\Price-by-Neighborhood.png)
+
+- Manhattan has the highest average prices across most room types
+- Entire homes/apartments are consistently the most expensive option in all neighbourhoods
+- Private and shared rooms are more affordable, with relatively similar pricing across areas
+- Brooklyn and Queens offer comparatively lower prices than Manhattan
+
+---
+
+### Price vs Number of Reviews
+![Price vs Reviews](Images\Price-vs-Reviews.png)
+
+- Lower-priced listings tend to receive more reviews
+- Indicates a negative relationship between price and demand
+
+---
+
+### Correlation Heatmap
+![Correlation Heatmap](Images\Correlation-Heatmap.png)
+
+- Price shows moderate correlation with number of reviews and availability
+- Most variables have weak correlations, indicating independent effects
 ---
 
 ## Key Findings and Insights
@@ -75,4 +112,4 @@ This project offers valuable insights into the New York Airbnb market, helping b
 
 Author
 Faisal Khan  
-Faisalkhan2287@gmail.com
+Gmail: Faisalkhan2287@gmail.com  
