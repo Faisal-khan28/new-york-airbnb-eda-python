@@ -3,7 +3,9 @@
 ---
 
 ## Project Overview
-This project performs **Exploratory Data Analysis (EDA)** on New York Airbnb data to understand pricing patterns, availability trends, and host behavior. The analysis focuses on extracting meaningful insights from raw data.
+
+This project performs **Exploratory Data Analysis (EDA)** on New York Airbnb data to understand availability trends, and host behavior. The analysis focuses on extracting meaningful insights from raw data.
+
 ![AirBnb](Images/Renting-out-on-Air-BnB-scaled.jpg)
 ---
 
@@ -36,7 +38,7 @@ The dataset contains **20,770 entries and 22 features**, including:
 - **Handled missing data**: `price`, `neighborhood`, and `beds` columns had null values.  
 -  **Handled duplicate values**: Dropped duplicate values from data.
 - **Fix data types**: Converted `last_review` to a **datetime** object.
-- **Remove outliers**: The IQR method identified an upper bound of approximately 377 for the price column. However, the distribution of Airbnb prices is highly right-skewed, with extreme values (maximum price = 100,000) inflating the variance.  
+- **Remove outliers**: The IQR method identified an upper bound of approximately 377 for the price column. However, the distribution of Airbnb prices is highly right-skewed, with extreme values (maximum price = 100,000) inflating the variance.   
 To avoid removing legitimate high-priced listings while still filtering unrealistic values, listings with prices greater than 1500 were treated as outliers and removed from the dataset.
 
 ---
